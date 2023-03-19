@@ -14,17 +14,17 @@ sealed class BottomBar(
 ) {
     object One : BottomBar(
         route = "one",
-        title = "One",
+        title = "Инфо",
         icon = Icons.Default.Info
     )
     object Two : BottomBar(
         route = "two",
-        title = "Two",
+        title = "Состав",
         icon = Icons.Default.List
     )
     object Three : BottomBar(
         route = "three",
-        title = "Three",
+        title = "Шаги",
         icon = Icons.Default.Menu
     )
 }

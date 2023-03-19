@@ -146,8 +146,8 @@ private fun getRecipe(context:Context,input:String){
     }
 }
 private fun sharking(context:Context, input:String){
-    var sensorManager = context.getSystemService(SensorManager::class.java) as SensorManager
-    var sensorShake = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
+    val sensorManager = context.getSystemService(SensorManager::class.java) as SensorManager
+    val sensorShake = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
 
     val sensorEventListener = object : SensorEventListener {
         override fun onSensorChanged(p0: SensorEvent?) {
